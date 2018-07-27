@@ -47,8 +47,6 @@ record(ao,"DBRdouble") {
     field(LLSV, "MAJOR")
     field(DRVH, "10.0")
     field(DRVL, "-10.0")
-    field(HIGH, "10.0")
-    field(LOW, "-10.0")
     field(HOPR, "10.0")
     field(LOPR, "-10.0")
 }
