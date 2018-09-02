@@ -1,0 +1,4 @@
+record(lso, "$(name)")
+{
+        field(SIZV,"100")
+}

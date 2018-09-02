@@ -13,6 +13,7 @@ dbLoadRecords("db/dbCounter.db","name=DBRcounter01")
 dbLoadRecords("db/dbSimpleBusy.db","name=DBRbusy")
 dbLoadRecords("db/dbArray.db","name=DBRdoubleArray,type=DOUBLE")
 dbLoadRecords("db/test.db")
+dbLoadRecords("db/dbLongString.db","name=DBRlongstring")
 
 
 

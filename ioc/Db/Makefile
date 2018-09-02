@@ -21,6 +21,8 @@ DB += dbDouble.db
 DB += test.db
 DB += dbSimpleBusy.db
 DB += scale.db
+DB += scaleNOSCAN.db
+DB += dbLongString.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
