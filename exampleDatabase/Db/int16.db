@@ -1,0 +1,16 @@
+record(shortout, "$(name)")
+{
+	field(EGU, "Counts")
+	field(HOPR, "32767")
+	field(LOPR, "-32768")
+	field(DRVH, "32767")
+	field(DRVL, "-32768")
+	field(HIHI, "10000")
+	field(HIGH, "1000")
+	field(LOW, "-1000")
+	field(LOLO, "-10000")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+	field(LSV, "MINOR")
+	field(LLSV, "MAJOR")
+}

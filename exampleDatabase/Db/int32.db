@@ -1,0 +1,11 @@
+record(longout, "$(name)")
+{
+    field(HIHI, "80000")
+    field(HIGH, "60000")
+    field(LOW, "-6000")
+    field(LOLO, "-8000")
+    field(HHSV, "MAJOR")
+    field(HSV, "MINOR")
+    field(LSV, "MINOR")
+    field(LLSV, "MAJOR")
+}

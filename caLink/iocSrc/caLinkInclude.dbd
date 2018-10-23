@@ -1,0 +1,8 @@
+include "base.dbd"
+
+include "monitorLinkRegister.dbd"
+include "getLinkRegister.dbd"
+include "putLinkRegister.dbd"
+include "PVAServerRegister.dbd"
+include "registerChannelProviderLocal.dbd"
+include "qsrv.dbd"

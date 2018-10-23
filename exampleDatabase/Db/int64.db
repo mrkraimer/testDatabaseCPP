@@ -1,0 +1,3 @@
+record(int64out, "$(name)")
+{
+}

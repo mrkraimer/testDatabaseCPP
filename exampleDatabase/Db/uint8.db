@@ -1,0 +1,16 @@
+record(ucharout, "$(name)")
+{
+	field(EGU, "number")
+	field(HOPR, "255")
+	field(LOPR, "0")
+	field(DRVH, "255")
+	field(DRVL, "0")
+	field(HIHI, "200")
+	field(HIGH, "100")
+	field(LOW, "4")
+	field(LOLO, "2")
+	field(HHSV, "MAJOR")
+	field(HSV, "MINOR")
+	field(LSV, "MINOR")
+	field(LLSV, "MAJOR")
+}

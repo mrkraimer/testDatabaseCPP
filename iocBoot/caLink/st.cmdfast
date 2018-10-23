@@ -1,0 +1,19 @@
+< envPaths
+
+cd ${TOP}
+
+## Register all support components
+dbLoadDatabase("dbd/caLink.dbd")
+caLink_registerRecordDeviceDriver(pdbbase)
+
+## Load record instance
+dbLoadRecords("db/double.db","name=DBRdouble");
+dbLoadRecords("db/calcLink.db","name=DBRcalc,flnkname=DBRinLink");
+dbLoadRecords("db/inLink.db","name=DBRinLink,inname=DBRcalc");
+dbLoadRecords("db/outLink.db","name=DBRoutLink,outname=DBRdouble");
+
+cd ${TOP}/iocBoot/${IOC}
+iocInit()
+monitorLinkCreateRecord ca PVRMonitorLink DBRinLink
+getLinkCreateRecord ca RVRGetLink DBRdouble
+putLinkCreateRecord ca PVRPutLink DBRdouble

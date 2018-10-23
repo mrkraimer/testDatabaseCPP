@@ -1,0 +1,5 @@
+record(calc, "$(name)") {
+  field(INPA, "$(name) CP")
+  field(CALC, "A+1")
+  field(FLNK, "$(flnkname) PP")
+}
