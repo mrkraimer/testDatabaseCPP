@@ -15,6 +15,9 @@ manyDBRecords_DEPEND_DIRS = configure
 DIRS += iocBoot
 iocBoot_DEPEND_DIRS = configure
 
+DIRS += example
+example_DEPEND_DIRS = configure
+
 include $(TOP)/configure/RULES_TOP
 
 
