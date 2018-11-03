@@ -1,0 +1,90 @@
+DBRint8 provider ca request value value 127
+pvResult
+structure 
+    byte value 127
+
+DBRuint8 provider ca request value[dbtype=DBF_UCHAR] value 128
+pvResult
+structure 
+    ubyte value 128
+
+DBRint16 provider ca request value value 32767
+pvResult
+structure 
+    short value 32767
+
+DBRuint16 provider ca request value[dbtype=DBF_USHORT] value 32768
+pvResult
+structure 
+    ushort value 32768
+
+DBRint32 provider ca request value value 2147483647
+pvResult
+structure 
+    int value 2147483647
+
+DBRuint32 provider ca request value[dbtype=DBF_ULONG] value 4294967295
+pvResult
+structure 
+    uint value 4294967295
+
+DBRint64 provider ca request value[dbtype=DBF_INT64] value 4294967296000000001
+pvResult
+structure 
+    long value 4294967296000000000
+
+DBRuint64 provider ca request value[dbtype=DBF_UINT64] value 4294967296000000001
+pvResult
+structure 
+    ulong value 4294967296000000000
+
+DBRint8Array provider ca request value value 127 -128
+pvResult
+structure 
+    byte[] value [127,-128]
+
+DBRuint8Array provider ca request value[dbtype=DBF_UCHAR] value 0 128
+pvResult
+structure 
+    ubyte[] value [0,128]
+
+DBRint16Array provider ca request value value 32767 -32768
+pvResult
+structure 
+    short[] value [32767,-32768]
+
+DBRuint16Array provider ca request value[dbtype=DBF_USHORT] value 0 32768
+pvResult
+structure 
+    ushort[] value [0,32768]
+
+DBRint32Array provider ca request value value 2147483647 -2147483648
+pvResult
+structure 
+    int[] value [2147483647,-2147483648]
+
+DBRuint32Array provider ca request value[dbtype=DBF_ULONG] value 0 4294967295
+pvResult
+structure 
+    uint[] value [0,4294967295]
+
+DBRint64Array provider ca request value[dbtype=DBF_INT64] value 4294967296000000001 -4294967296000000001
+pvResult
+structure 
+    long[] value [4294967296000000000,-4294967296000000000]
+
+DBRuint64Array provider ca request value[dbtype=DBF_UINT64] value 0 4294967296000000001
+pvResult
+structure 
+    ulong[] value [0,4294967296000000000]
+
+DBRstringArray provider ca request value value a b c d e f
+pvResult
+structure 
+    string[] value ["a", "b", "c", "d", "e"]
+
+DBRlongstring.VAL$ provider ca request value[pvtype=pvString] value 1234567892012345678930123456789401234567895012345678960
+pvResult
+structure 
+    string value 1234567892012345678930123456789401234567895012345678960
+

@@ -15,5 +15,5 @@ dbLoadRecords("db/outLink.db","name=DBRoutLink,outname=DBRdouble");
 cd ${TOP}/iocBoot/${IOC}
 iocInit()
 monitorLinkCreateRecord ca PVRMonitorLink DBRinLink
-getLinkCreateRecord ca RVRGetLink DBRdouble
+getLinkCreateRecord ca PVRGetLink DBRdouble
 putLinkCreateRecord ca PVRPutLink DBRdouble
