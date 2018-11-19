@@ -7,9 +7,9 @@ include $(TOP)/configure/CONFIG
 EPICS_BASE_PVA_CORE_LIBS = pvaClient pvAccess pvAccessCA nt pvData ca Com
 #EPICS_BASE_PVA_CORE_LIBS = pvaClient pvAccess pva2ca nt pvData ca Com
 
-PROD_HOST += manyDBRrecordTypesClient
-manyDBRrecordTypesClient_SRCS += manyDBRrecordTypesClient.cpp
-manyDBRrecordTypesClient_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
+PROD_HOST += DBRrecordTypesClient
+DBRrecordTypesClient_SRCS += DBRrecordTypesClient.cpp
+DBRrecordTypesClient_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
 
 
 PROD_SYS_LIBS_WIN32 += ws2_32

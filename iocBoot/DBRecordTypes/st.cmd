@@ -3,8 +3,8 @@
 cd ${TOP}
 
 ## Register all support components
-dbLoadDatabase("dbd/manyDBRecordTypes.dbd")
-manyDBRecordTypes_registerRecordDeviceDriver(pdbbase)
+dbLoadDatabase("dbd/recordTypes.dbd")
+recordTypes_registerRecordDeviceDriver(pdbbase)
 
 ## Load record instances
 dbLoadRecords("db/stringArray.db","name=DBRstringArray")

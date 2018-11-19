@@ -10,15 +10,7 @@ include $(TOP)/configure/CONFIG
 #
 LIBRARY_IOC += DBRecordTypes
 
-DBD += manyDBRecordTypes.dbd
-DBDINC += simpleBusyRecord
-DBDINC += charoutRecord
-DBDINC += shortoutRecord
-DBDINC += ucharoutRecord
-DBDINC += ushortoutRecord
-DBDINC += ulongoutRecord
-DBDINC += floatoutRecord
-DBDINC += uint64Record
+
 
 DBRecordTypes_SRCS+= simpleBusyRecord.c
 DBRecordTypes_SRCS+= charoutRecord.c
@@ -30,24 +22,34 @@ DBRecordTypes_SRCS+= floatoutRecord.c
 DBRecordTypes_SRCS+= uint64Record.c
 example_LIBS += $(EPICS_BASE_IOC_LIBS)
 
+DBD += recordTypes.dbd
+DBDINC += simpleBusyRecord
+DBDINC += charoutRecord
+DBDINC += shortoutRecord
+DBDINC += ucharoutRecord
+DBDINC += ushortoutRecord
+DBDINC += ulongoutRecord
+DBDINC += floatoutRecord
+DBDINC += uint64Record
+
 #=============================
 # build an ioc application
 
-PROD_IOC += manyDBRecordTypes
+PROD_IOC += recordTypes
 
 
 # <name>_registerRecordDeviceDriver.cpp will be created from <name>.dbd
-manyDBRecordTypes_SRCS += manyDBRecordTypes_registerRecordDeviceDriver.cpp
-manyDBRecordTypes_SRCS_DEFAULT += manyDBRecordTypesMain.cpp
-manyDBRecordTypes_SRCS_vxWorks += -nil-
+recordTypes_SRCS += recordTypes_registerRecordDeviceDriver.cpp
+recordTypes_SRCS_DEFAULT += recordTypesMain.cpp
+recordTypes_SRCS_vxWorks += -nil-
 
 
 # The following adds support from base/src/vxWorks
-manyDBRecordTypes_OBJS_vxWorks += $(EPICS_BASE_BIN)/vxComLibrary
+recordTypes_OBJS_vxWorks += $(EPICS_BASE_BIN)/vxComLibrary
 
-manyDBRecordTypes_LIBS += DBRecordTypes
-manyDBRecordTypes_LIBS += pvDatabase qsrv pvaClient pvAccessIOC pvAccess pvAccessCA nt pvData
-manyDBRecordTypes_LIBS += $(EPICS_BASE_IOC_LIBS)
+recordTypes_LIBS += DBRecordTypes
+recordTypes_LIBS += pvDatabase qsrv pvaClient pvAccessIOC pvAccess pvAccessCA nt pvData
+recordTypes_LIBS += $(EPICS_BASE_IOC_LIBS)
 
 PROD_SYS_LIBS_WIN32 += ws2_32
 

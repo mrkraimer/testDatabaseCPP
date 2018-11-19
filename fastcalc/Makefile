@@ -1,11 +1,13 @@
 # Makefile at top of application tree
 
-TOP = ../..
+TOP = ..
 include $(TOP)/configure/CONFIG
 
+DIRS += src
+
 DIRS += Db
-DIRS += iocSrc
 
 include $(TOP)/configure/RULES_DIRS
+
 
 

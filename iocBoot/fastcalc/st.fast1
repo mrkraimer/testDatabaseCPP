@@ -1,0 +1,14 @@
+< envPaths
+
+cd ${TOP}
+
+## Register all support components
+dbLoadDatabase("dbd/recordTypes.dbd")
+recordTypes_registerRecordDeviceDriver(pdbbase)
+
+## Load record instances
+dbLoadRecords("db/fastcalc.db","name=FAST1")
+
+
+cd ${TOP}/iocBoot/${IOC}
+iocInit()

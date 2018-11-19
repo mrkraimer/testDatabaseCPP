@@ -1,0 +1,18 @@
+record(calc, "$(name)") {
+    field(INPA, "$(name).VAL CP")
+    field(CALC,  "(A<B)?(A+C):D")
+    field(INPB, "09999999")
+    field(INPC, "1")
+    field(INPD, "0")
+    field(EGU, "Counts")
+    field(HOPR, "10000000")
+    field(HIHI,  "8000000")
+    field(HIGH,  "6000000")
+    field(LOW,   "4000000")
+    field(LOLO,  "2000000")
+    field(HHSV, "MAJOR")
+    field(HSV, "MINOR")
+    field(LSV, "MINOR")
+    field(LLSV, "MAJOR")
+    field(PREC, "0")
+}

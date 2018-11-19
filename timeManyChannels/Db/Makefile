@@ -1,4 +1,4 @@
-TOP=../../..
+TOP=../..
 include $(TOP)/configure/CONFIG
 #----------------------------------------
 #  ADD MACRO DEFINITIONS AFTER THIS LINE
@@ -11,8 +11,8 @@ include $(TOP)/configure/CONFIG
 # Create and install (or just install)
 # databases, templates, substitutions like this
 
-DB += scale.db
-DB += scaleNOSCAN.db
+DB += counter.db
+DB += counterNOSCAN.db
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
