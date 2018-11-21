@@ -154,7 +154,7 @@ typedef std::tr1::shared_ptr<ClientMonitor> ClientMonitorPtr;
 int main(int argc,char *argv[])
 {
     string provider("pva");
-    string channelName("PVRdouble");
+    string channelName("FAST1");
     string request("value,alarm,timeStamp");
     double sleepTime = 0.0;
     string optString;
@@ -170,13 +170,13 @@ int main(int argc,char *argv[])
                 request = optarg;
                 break;
             case 'h':
-             cout << " -h -p provider -r request - d debug -v printValue -s 0.0 channelNames " << endl;
+             cout << " -h -p provider -r request - d debug -v printValue -s sleepTime channelNames " << endl;
              cout << "default" << endl;
              cout << "-p " << provider 
                   << " -r " << request
                   << " -d " << (debug ? "true" : "false")
                   << " -v " << (printValue ? "true" : "false")
-                  << " -v " << sleepTime
+                  << " -s " << sleepTime
                   << " " <<  channelName
                   << endl;           
                 return 0;

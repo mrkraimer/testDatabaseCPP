@@ -7,8 +7,8 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIHI
     time_t timeStamp
-        long secondsPastEpoch 1540474664
-        int nanoseconds 241047848
+        long secondsPastEpoch 1542799740
+        int nanoseconds 555906952
         int userTag 0
     display_t display
         double limitLow -128
@@ -41,8 +41,8 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIGH
     time_t timeStamp
-        long secondsPastEpoch 1540474664
-        int nanoseconds 442480745
+        long secondsPastEpoch 1542799740
+        int nanoseconds 858102609
         int userTag 0
     display_t display
         double limitLow 0
@@ -75,8 +75,8 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIHI
     time_t timeStamp
-        long secondsPastEpoch 1540474664
-        int nanoseconds 744301116
+        long secondsPastEpoch 1542799740
+        int nanoseconds 959992493
         int userTag 0
     display_t display
         double limitLow -32768
@@ -109,8 +109,8 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIHI
     time_t timeStamp
-        long secondsPastEpoch 1540474664
-        int nanoseconds 946406983
+        long secondsPastEpoch 1542799741
+        int nanoseconds 61978476
         int userTag 0
     display_t display
         double limitLow 0
@@ -143,8 +143,8 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIHI
     time_t timeStamp
-        long secondsPastEpoch 1540474665
-        int nanoseconds 248439045
+        long secondsPastEpoch 1542799741
+        int nanoseconds 163487981
         int userTag 0
     display_t display
         double limitLow 0
@@ -177,8 +177,8 @@ epics:nt/NTScalar:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1540474665
-        int nanoseconds 450103073
+        long secondsPastEpoch 1542799741
+        int nanoseconds 265065100
         int userTag 0
     display_t display
         double limitLow 0
@@ -215,8 +215,8 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1540474669
-        int nanoseconds 757688551
+        long secondsPastEpoch 1542799745
+        int nanoseconds 673752157
         int userTag 0
     display_t display
         double limitLow 0
@@ -249,8 +249,8 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1540474669
-        int nanoseconds 859688777
+        long secondsPastEpoch 1542799745
+        int nanoseconds 975812491
         int userTag 0
     display_t display
         double limitLow 0
@@ -283,8 +283,8 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1540474669
-        int nanoseconds 961895106
+        long secondsPastEpoch 1542799746
+        int nanoseconds 177865159
         int userTag 0
     display_t display
         double limitLow 0
@@ -317,8 +317,8 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1540474670
-        int nanoseconds 64134962
+        long secondsPastEpoch 1542799746
+        int nanoseconds 480140351
         int userTag 0
     display_t display
         double limitLow 0
@@ -351,8 +351,8 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1540474670
-        int nanoseconds 166386566
+        long secondsPastEpoch 1542799746
+        int nanoseconds 582416734
         int userTag 0
     display_t display
         double limitLow 0
@@ -385,8 +385,8 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1540474670
-        int nanoseconds 268187050
+        long secondsPastEpoch 1542799746
+        int nanoseconds 684752996
         int userTag 0
     display_t display
         double limitLow 0
@@ -417,14 +417,14 @@ did not connect
 DBRstringArray provider pva request value value a b c d e f
 pvResult
 epics:nt/NTScalarArray:1.0 
-    string[] value [a,b,c,d,e]
+    string[] value ["a", "b", "c", "d", "e"]
     alarm_t alarm
         int severity 0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1540474674
-        int nanoseconds 776714030
+        long secondsPastEpoch 1542799750
+        int nanoseconds 994257151
         int userTag 0
     display_t display
         double limitLow 0

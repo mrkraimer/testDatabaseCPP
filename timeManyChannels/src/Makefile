@@ -27,6 +27,18 @@ PROD_HOST += timeManyChannelMonitor
 timeManyChannelMonitor_SRCS += timeManyChannelMonitor.cpp
 timeManyChannelMonitor_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
 
+PROD_HOST += monitormany
+monitormany_SRCS += monitormany.cpp
+monitormany_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
+
+PROD_HOST += getmany
+getmany_SRCS += getmany.cpp
+getmany_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
+
+PROD_HOST += putmany
+putmany_SRCS += putmany.cpp
+putmany_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
+
 
 #===========================
 
