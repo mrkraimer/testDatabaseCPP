@@ -1,0 +1,20 @@
+pvget -r "value,alarm,timeStamp,junk" -v PVRdouble
+pvget -r "xxx,yyy,zzz" PVRdouble
+pvget -r "alarm,power{value,alarm,junk}" PVRdumbPowerSupply
+pvget -r "alarm,power{value.x,alarm,junk}" PVRdumbPowerSupply
+pvget -r "alarm.x" PVRdouble
+pvget -r "alarm{status,junk}" PVRdouble
+pvget -r "value,alarm{status,junk}" -v PVRdouble
+pvget -r "value,alarm" -v PVRdouble
+pvget -r "value,alarm{status,junk}" -v PVRdouble
+pvget -r "value,alarm{status,severity}" -v PVRdouble
+pvget -r "value,alarm{status.junk,severity}" -v PVRdouble
+pvput -r value PVRrestrictedUnion '{"value":"aaa"}'
+pvget -r "value.string" PVRrestrictedUnion
+pvget -r "value[a=b,c=d].string" PVRrestrictedUnion
+pvget -r "value[a=b,c=d]{string}" PVRrestrictedUnion
+pvget -r "value[a=b,c=d]{string,x}" PVRrestrictedUnion
+pvget -r "value.stringArray" PVRrestrictedUnion
+pvget -r "value{string,x}" PVRrestrictedUnion
+
+
