@@ -100,7 +100,7 @@ public:
         try {
             cout << "get " << channelName  << " " 
                  << pvaClientChannel->get()->getData()->getPVStructure()->getSubField("value") << endl;
-        } catch (std::runtime_error e) {
+        } catch (std::exception& e) {
             cerr << "exception " << e.what() << endl;
         }
     }
@@ -115,7 +115,7 @@ public:
            PvaClientPutPtr put = pvaClientChannel->put();
            PvaClientPutDataPtr putData = put->getData();
            putData->putDouble(value); put->put();
-        } catch (std::runtime_error e) {
+        } catch (std::exception& e) {
             cerr << "exception " << e.what() << endl;
         }
     }
@@ -233,7 +233,7 @@ int main(int argc,char *argv[])
             if(ClientChannel[i]->isConnected()) numConnect++;
         }
         cout << " numConnect " << numConnect << "\n";
-    } catch (std::runtime_error e) {
+    } catch (std::exception& e) {
         cerr << "exception " << e.what() << endl;
         return 1;
     }

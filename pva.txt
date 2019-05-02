@@ -7,25 +7,28 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIHI
     time_t timeStamp
-        long secondsPastEpoch 1542799740
-        int nanoseconds 555906952
+        long secondsPastEpoch 1556815189
+        int nanoseconds 313740822
         int userTag 0
-    display_t display
+    structure display
         double limitLow -128
         double limitHigh 127
         string description 
-        string format 
         string units 
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow -128
         double limitHigh 127
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        byte lowAlarmLimit -120
-        byte lowWarningLimit -100
-        byte highWarningLimit 100
-        byte highAlarmLimit 120
+        double lowAlarmLimit -120
+        double lowWarningLimit -100
+        double highWarningLimit 100
+        double highAlarmLimit 120
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
@@ -41,30 +44,33 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIGH
     time_t timeStamp
-        long secondsPastEpoch 1542799740
-        int nanoseconds 858102609
+        long secondsPastEpoch 1556815189
+        int nanoseconds 515552048
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 255
         string description 
-        string format 
         string units 
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 255
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        ubyte lowAlarmLimit 2
-        ubyte lowWarningLimit 4
-        ubyte highWarningLimit 100
-        ubyte highAlarmLimit 200
+        double lowAlarmLimit 2
+        double lowWarningLimit 4
+        double highWarningLimit 100
+        double highAlarmLimit 200
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        ubyte hysteresis 0
+        byte hysteresis 0
 
 DBRint16 provider pva request value value 32767
 pvResult
@@ -75,30 +81,33 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIHI
     time_t timeStamp
-        long secondsPastEpoch 1542799740
-        int nanoseconds 959992493
+        long secondsPastEpoch 1556815189
+        int nanoseconds 818062195
         int userTag 0
-    display_t display
+    structure display
         double limitLow -32768
         double limitHigh 32767
         string description 
-        string format 
         string units 
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow -32768
         double limitHigh 32767
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        short lowAlarmLimit -10000
-        short lowWarningLimit -1000
-        short highWarningLimit 1000
-        short highAlarmLimit 10000
+        double lowAlarmLimit -10000
+        double lowWarningLimit -1000
+        double highWarningLimit 1000
+        double highAlarmLimit 10000
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        short hysteresis 0
+        byte hysteresis 0
 
 DBRuint16 provider pva request value[dbtype=DBF_USHORT] value 32768
 pvResult
@@ -109,30 +118,33 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIHI
     time_t timeStamp
-        long secondsPastEpoch 1542799741
-        int nanoseconds 61978476
+        long secondsPastEpoch 1556815189
+        int nanoseconds 920586456
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 65535
         string description 
-        string format 
         string units 
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 65535
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        ushort lowAlarmLimit 45536
-        ushort lowWarningLimit 55536
-        ushort highWarningLimit 10000
-        ushort highAlarmLimit 20000
+        double lowAlarmLimit 45536
+        double lowWarningLimit 55536
+        double highWarningLimit 10000
+        double highAlarmLimit 20000
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        ushort hysteresis 0
+        byte hysteresis 0
 
 DBRint32 provider pva request value value 2147483647
 pvResult
@@ -143,30 +155,33 @@ epics:nt/NTScalar:1.0
         int status 1
         string message HIHI
     time_t timeStamp
-        long secondsPastEpoch 1542799741
-        int nanoseconds 163487981
+        long secondsPastEpoch 1556815190
+        int nanoseconds 23270614
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 0
         string description 
-        string format 
         string units 
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 0
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        int lowAlarmLimit -8000
-        int lowWarningLimit -6000
-        int highWarningLimit 60000
-        int highAlarmLimit 80000
+        double lowAlarmLimit -8000
+        double lowWarningLimit -6000
+        double highWarningLimit 60000
+        double highAlarmLimit 80000
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        int hysteresis 0
+        byte hysteresis 0
 
 DBRuint32 provider pva request value[dbtype=DBF_ULONG] value 4294967295
 pvResult
@@ -177,35 +192,108 @@ epics:nt/NTScalar:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1542799741
-        int nanoseconds 265065100
+        long secondsPastEpoch 1556815190
+        int nanoseconds 126038149
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 0
         string description 
-        string format 
         string units 
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 0
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        uint lowAlarmLimit 0
-        uint lowWarningLimit 0
-        uint highWarningLimit 0
-        uint highAlarmLimit 0
+        double lowAlarmLimit 0
+        double lowWarningLimit 0
+        double highWarningLimit 0
+        double highAlarmLimit 0
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        uint hysteresis 0
+        byte hysteresis 0
 
 DBRint64 provider pva request value[dbtype=DBF_INT64] value 4294967296000000001
-did not connect
+pvResult
+epics:nt/NTScalar:1.0 
+    long value 4294967296000000001
+    alarm_t alarm
+        int severity 0
+        int status 0
+        string message NO_ALARM
+    time_t timeStamp
+        long secondsPastEpoch 1556815190
+        int nanoseconds 228526464
+        int userTag 0
+    structure display
+        double limitLow 0
+        double limitHigh 0
+        string description 
+        string units 
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
+    control_t control
+        double limitLow 0
+        double limitHigh 0
+        double minStep 0
+    valueAlarm_t valueAlarm
+        boolean active false
+        double lowAlarmLimit 0
+        double lowWarningLimit 0
+        double highWarningLimit 0
+        double highAlarmLimit 0
+        int lowAlarmSeverity 0
+        int lowWarningSeverity 0
+        int highWarningSeverity 0
+        int highAlarmSeverity 0
+        byte hysteresis 0
+
 DBRuint64 provider pva request value[dbtype=DBF_UINT64] value 4294967296000000001
-did not connect
+pvResult
+epics:nt/NTScalar:1.0 
+    ulong value 4294967296000000001
+    alarm_t alarm
+        int severity 0
+        int status 0
+        string message NO_ALARM
+    time_t timeStamp
+        long secondsPastEpoch 1556815190
+        int nanoseconds 331183449
+        int userTag 0
+    structure display
+        double limitLow 0
+        double limitHigh 0
+        string description 
+        string units 
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
+    control_t control
+        double limitLow 0
+        double limitHigh 0
+        double minStep 0
+    valueAlarm_t valueAlarm
+        boolean active false
+        double lowAlarmLimit 0
+        double lowWarningLimit 0
+        double highWarningLimit 0
+        double highAlarmLimit 0
+        int lowAlarmSeverity 0
+        int lowWarningSeverity 0
+        int highWarningSeverity 0
+        int highAlarmSeverity 0
+        byte hysteresis 0
+
 DBRint8Array provider pva request value value 127 -128
 pvResult
 epics:nt/NTScalarArray:1.0 
@@ -215,25 +303,28 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1542799745
-        int nanoseconds 673752157
+        long secondsPastEpoch 1556815190
+        int nanoseconds 433964788
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 0
         string description 
-        string format 
         string units waveform
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 0
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        byte lowAlarmLimit 0
-        byte lowWarningLimit 0
-        byte highWarningLimit 0
-        byte highAlarmLimit 0
+        double lowAlarmLimit nan
+        double lowWarningLimit nan
+        double highWarningLimit nan
+        double highAlarmLimit nan
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
@@ -249,30 +340,33 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1542799745
-        int nanoseconds 975812491
+        long secondsPastEpoch 1556815190
+        int nanoseconds 536774259
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 0
         string description 
-        string format 
         string units waveform
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 0
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        ubyte lowAlarmLimit 0
-        ubyte lowWarningLimit 0
-        ubyte highWarningLimit 0
-        ubyte highAlarmLimit 0
+        double lowAlarmLimit nan
+        double lowWarningLimit nan
+        double highWarningLimit nan
+        double highAlarmLimit nan
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        ubyte hysteresis 0
+        byte hysteresis 0
 
 DBRint16Array provider pva request value value 32767 -32768
 pvResult
@@ -283,30 +377,33 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1542799746
-        int nanoseconds 177865159
+        long secondsPastEpoch 1556815190
+        int nanoseconds 639573430
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 0
         string description 
-        string format 
         string units waveform
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 0
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        short lowAlarmLimit 0
-        short lowWarningLimit 0
-        short highWarningLimit 0
-        short highAlarmLimit 0
+        double lowAlarmLimit nan
+        double lowWarningLimit nan
+        double highWarningLimit nan
+        double highAlarmLimit nan
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        short hysteresis 0
+        byte hysteresis 0
 
 DBRuint16Array provider pva request value[dbtype=DBF_USHORT] value 0 32768
 pvResult
@@ -317,30 +414,33 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1542799746
-        int nanoseconds 480140351
+        long secondsPastEpoch 1556815190
+        int nanoseconds 742385501
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 0
         string description 
-        string format 
         string units waveform
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 0
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        ushort lowAlarmLimit 0
-        ushort lowWarningLimit 0
-        ushort highWarningLimit 0
-        ushort highAlarmLimit 0
+        double lowAlarmLimit nan
+        double lowWarningLimit nan
+        double highWarningLimit nan
+        double highAlarmLimit nan
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        ushort hysteresis 0
+        byte hysteresis 0
 
 DBRint32Array provider pva request value value 2147483647 -2147483648
 pvResult
@@ -351,30 +451,33 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1542799746
-        int nanoseconds 582416734
+        long secondsPastEpoch 1556815190
+        int nanoseconds 845152277
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 0
         string description 
-        string format 
         string units waveform
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 0
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        int lowAlarmLimit -2147483648
-        int lowWarningLimit -2147483648
-        int highWarningLimit -2147483648
-        int highAlarmLimit -2147483648
+        double lowAlarmLimit nan
+        double lowWarningLimit nan
+        double highWarningLimit nan
+        double highAlarmLimit nan
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        int hysteresis 0
+        byte hysteresis 0
 
 DBRuint32Array provider pva request value[dbtype=DBF_ULONG] value 0 4294967295
 pvResult
@@ -385,35 +488,108 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1542799746
-        int nanoseconds 684752996
+        long secondsPastEpoch 1556815190
+        int nanoseconds 947907391
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 0
         string description 
-        string format 
         string units waveform
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 0
         double minStep 0
     valueAlarm_t valueAlarm
         boolean active false
-        uint lowAlarmLimit 0
-        uint lowWarningLimit 0
-        uint highWarningLimit 0
-        uint highAlarmLimit 0
+        double lowAlarmLimit nan
+        double lowWarningLimit nan
+        double highWarningLimit nan
+        double highAlarmLimit nan
         int lowAlarmSeverity 0
         int lowWarningSeverity 0
         int highWarningSeverity 0
         int highAlarmSeverity 0
-        uint hysteresis 0
+        byte hysteresis 0
 
 DBRint64Array provider pva request value[dbtype=DBF_INT64] value 4294967296000000001 -4294967296000000001
-did not connect
+pvResult
+epics:nt/NTScalarArray:1.0 
+    long[] value [4294967296000000001,-4294967296000000001]
+    alarm_t alarm
+        int severity 0
+        int status 0
+        string message NO_ALARM
+    time_t timeStamp
+        long secondsPastEpoch 1556815191
+        int nanoseconds 50473464
+        int userTag 0
+    structure display
+        double limitLow 0
+        double limitHigh 0
+        string description 
+        string units waveform
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
+    control_t control
+        double limitLow 0
+        double limitHigh 0
+        double minStep 0
+    valueAlarm_t valueAlarm
+        boolean active false
+        double lowAlarmLimit nan
+        double lowWarningLimit nan
+        double highWarningLimit nan
+        double highAlarmLimit nan
+        int lowAlarmSeverity 0
+        int lowWarningSeverity 0
+        int highWarningSeverity 0
+        int highAlarmSeverity 0
+        byte hysteresis 0
+
 DBRuint64Array provider pva request value[dbtype=DBF_UINT64] value 0 4294967296000000001
-did not connect
+pvResult
+epics:nt/NTScalarArray:1.0 
+    ulong[] value [0,4294967296000000001]
+    alarm_t alarm
+        int severity 0
+        int status 0
+        string message NO_ALARM
+    time_t timeStamp
+        long secondsPastEpoch 1556815191
+        int nanoseconds 153159606
+        int userTag 0
+    structure display
+        double limitLow 0
+        double limitHigh 0
+        string description 
+        string units waveform
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
+    control_t control
+        double limitLow 0
+        double limitHigh 0
+        double minStep 0
+    valueAlarm_t valueAlarm
+        boolean active false
+        double lowAlarmLimit nan
+        double lowWarningLimit nan
+        double highWarningLimit nan
+        double highAlarmLimit nan
+        int lowAlarmSeverity 0
+        int lowWarningSeverity 0
+        int highWarningSeverity 0
+        int highAlarmSeverity 0
+        byte hysteresis 0
+
 DBRstringArray provider pva request value value a b c d e f
 pvResult
 epics:nt/NTScalarArray:1.0 
@@ -423,15 +599,18 @@ epics:nt/NTScalarArray:1.0
         int status 0
         string message NO_ALARM
     time_t timeStamp
-        long secondsPastEpoch 1542799750
-        int nanoseconds 994257151
+        long secondsPastEpoch 1556815191
+        int nanoseconds 255954723
         int userTag 0
-    display_t display
+    structure display
         double limitLow 0
         double limitHigh 0
         string description 
-        string format 
         string units 
+        int precision 0
+        enum_t form
+            int index 0
+            string[] choices ["Default", "String", "Binary", "Decimal", "Hex", "Exponential", "Engineering"]
     control_t control
         double limitLow 0
         double limitHigh 0

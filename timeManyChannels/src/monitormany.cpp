@@ -269,7 +269,7 @@ if(sleepTime>0.0) epicsThreadSleep(sleepTime);
                  for(int i=0; i<nchannels; ++i) {
                     try {
                        ClientMonitors[i]->connectMonitor();
-                    } catch (std::runtime_error e) {
+                    } catch (std::exception& e) {
                        cerr << "exception " << e.what() << endl;
                     }
                  }
@@ -281,7 +281,7 @@ if(sleepTime>0.0) epicsThreadSleep(sleepTime);
                  for(int i=0; i<nchannels; ++i) {
                     try {
                        ClientMonitors[i]->start(request);
-                    } catch (std::runtime_error e) {
+                    } catch (std::exception& e) {
                        cerr << "exception " << e.what() << endl;
                     }
                  }
@@ -291,7 +291,7 @@ if(sleepTime>0.0) epicsThreadSleep(sleepTime);
                  for(int i=0; i<nchannels; ++i) {
                     try {
                        ClientMonitors[i]->stop();
-                    } catch (std::runtime_error e) {
+                    } catch (std::exception& e) {
                        cerr << "exception " << e.what() << endl;
                     }
                  }
@@ -299,7 +299,7 @@ if(sleepTime>0.0) epicsThreadSleep(sleepTime);
             }
             cout << str << " not a legal commnd\n";
         }
-    } catch (std::runtime_error e) {
+    } catch (std::exception& e) {
         cerr << "exception " << e.what() << endl;
         return 1;
     }

@@ -215,7 +215,7 @@ int main(int argc,char *argv[])
                 for(int i=0; i<nchannels; ++i) {
                     try {
                        ClientGets[i]->get();
-                    } catch (std::runtime_error e) {
+                    } catch (std::exception& e) {
                        cerr << "exception " << e.what() << endl;
                     }
                  }
@@ -223,7 +223,7 @@ int main(int argc,char *argv[])
             }
             cout << str << " not a legal commnd\n";
         }
-    } catch (std::runtime_error e) {
+    } catch (std::exception& e) {
         cerr << "exception " << e.what() << endl;
         return 1;
     }

@@ -150,7 +150,7 @@ typedef std::tr1::shared_ptr<ClientMonitor> ClientMonitorPtr;
 int main(int argc,char *argv[])
 {
     string provider("pva");
-    string channelName("PVRdouble");
+    string channelName("FAST1");
     string request("value,alarm,timeStamp");
     string debugString;
     bool debug(false);
@@ -234,7 +234,7 @@ int main(int argc,char *argv[])
             }
             cout << "total events/second " << events << endl;
         }
-    } catch (std::runtime_error e) {
+    } catch (std::exception& e) {
         cerr << "exception " << e.what() << endl;
         return 1;
     }

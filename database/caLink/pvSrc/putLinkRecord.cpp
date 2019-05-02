@@ -157,7 +157,7 @@ void PutLinkRecord::process()
             }
             isPutDone = false;
             pvaClientPut->put();
-        } catch (std::runtime_error e) {
+        } catch (std::exception& e) {
             alarm.setMessage(e.what());
             alarm.setSeverity(invalidAlarm);
             pvAlarm.set(alarm);

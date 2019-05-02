@@ -98,26 +98,28 @@ int main(int argc, char *argv[]) {
     pva::ca::CAClientFactory::start();
     try {
         std::string providerName("pva"),
-                    requestStr("value,alarm,timeStamp");
+                    request("value,alarm,timeStamp");
         bool printValue(true);
         typedef std::vector<std::string> pvs_t;
         pvs_t pvs;
 
         int opt;
         std::string optString;
-        while((opt = getopt(argc, argv, "hp:w:r:v:")) != -1) {
+        while((opt = getopt(argc, argv, "hp:r:v:")) != -1) {
             switch(opt) {
             case 'p':
                 providerName = optarg;
                 break;
             case 'r':
-                requestStr = optarg;
+                request = optarg;
                 break;
             case 'h':
-                std::cout<<"Usage: "<<argv[0]
-                <<" [-p <provider>] [-w <timeout>] [-r <request>] "
-                << " [-v <printValue>] "
-                << " [-R] <pvname> ...\n";
+             cout << " -h -p provider -r request - -v printValue channelNames " << endl;
+             cout << "default" << endl;
+             cout << "-p " << providerName 
+                  << " -r " << request
+                  << " -v " << (printValue ? "true" : "false")
+                  << endl;           
                 return 0;
             case 'v' :
                optString =  optarg;
@@ -133,7 +135,7 @@ int main(int argc, char *argv[]) {
             pvs.push_back(argv[i]);
 
         // build "pvRequest" which asks for all fields
-        pvd::PVStructure::shared_pointer pvReq(pvd::createRequest(requestStr));
+        pvd::PVStructure::shared_pointer pvReq(pvd::createRequest(request));
 
         // explicitly select configuration from process environment
         pva::Configuration::shared_pointer conf(pva::ConfigurationBuilder()

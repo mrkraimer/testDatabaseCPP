@@ -248,7 +248,7 @@ static void putGet(
         clientGetPut->put(value);
         PVStructurePtr pvResult(clientGetPut->get());
         outfile << "pvResult\n" << pvResult << "\n";
-    } catch (std::runtime_error e) {
+    } catch (std::exception& e) {
          outfile << "exception " << e.what() << endl;
     }
 }

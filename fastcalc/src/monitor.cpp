@@ -243,7 +243,7 @@ int main(int argc,char *argv[])
                  for(int i=0; i<nPvs; ++i) {
                     try {
                        ClientMonitors[i]->start(request);
-                    } catch (std::runtime_error e) {
+                    } catch (std::exception& e) {
                        cerr << "exception " << e.what() << endl;
                     }
                  }
@@ -253,7 +253,7 @@ int main(int argc,char *argv[])
                  for(int i=0; i<nPvs; ++i) {
                     try {
                        ClientMonitors[i]->stop();
-                    } catch (std::runtime_error e) {
+                    } catch (std::exception& e) {
                        cerr << "exception " << e.what() << endl;
                     }
                  }
@@ -261,7 +261,7 @@ int main(int argc,char *argv[])
             }
             cout << str << " not a legal commnd\n";
         }
-    } catch (std::runtime_error e) {
+    } catch (std::exception& e) {
         cerr << "exception " << e.what() << endl;
         return 1;
     }

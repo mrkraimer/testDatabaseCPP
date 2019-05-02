@@ -177,7 +177,7 @@ public:
                 cout << "bitSet " << *bitSet << endl;
             }
 #endif
-        } catch (std::runtime_error e) {
+        } catch (std::exception& e) {
             cerr << "exception " << e.what() << endl;
         }
     }
@@ -444,7 +444,7 @@ int main(int argc,char *argv[])
             if(ClientGetPutMonitor[i]->isConnected()) numConnect++;
         }
         cout << " numConnect " << numConnect << "\n";
-    } catch (std::runtime_error e) {
+    } catch (std::exception& e) {
         cerr << "exception " << e.what() << endl;
         return 1;
     }
