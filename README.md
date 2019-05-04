@@ -2,10 +2,6 @@
 
 This contains code to test IOC databases.
 
-In particular it has an exampleDatabase that adds to epics-base records for every possible DBF type.
-
-It also has example that has client code to tests every record type in the exampleDatabase.
-
 
 ## Building
 
@@ -23,6 +19,8 @@ In **configure/RELEASE.local** it may only be necessary to change the definition
 of **EPICS4_DIR** and **EPICS_BASE**.
 
 ## DBRecordTypes test
+
+This is a test that has a DBRecord for every DBF type.
 
 ### Start IOC for test
 
@@ -49,13 +47,13 @@ Look at ca.txt and pva.txt
 
 ## manyChannels test
 
-This is a tests that starts an IOC with 50,000 DBRecords.
+This is a tests that starts an IOC with 50,000 records.
 There are two IOCs for the test.
 One creates 50,000 DBRecords.
 The other creates 50,000 PVRecords.
 Only one at a time should be started.
 
-and a clients that provides a combination of channelGet, channelPut, and monitor.
+Client code provides a combination of channelGet, channelPut, and monitor.
 
 ### Start DBRecords IOC for test
 
@@ -75,7 +73,7 @@ A number of client tests are available.
 Amoung these are **timeManyChannel**, **timeManyChannelGet**, **timeManyChannelMonitor**, 
 **timeManyChannelPut**, and **timeManyChannelGPM**.
 
-Each supports options for the numnber of channels and the provider.
+Each supports options for the number of channels and the provider.
 
 For example:
 
