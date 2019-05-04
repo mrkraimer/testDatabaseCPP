@@ -1,11 +1,10 @@
 # Makefile at top of application tree
 
-TOP = ..
+TOP = ../..
 include $(TOP)/configure/CONFIG
 
-DIRS += DBRecordTypes
-DIRS += caLink
-DIRS += softRecord
+DIRS += pvSrc
+DIRS += iocSrc
 
 include $(TOP)/configure/RULES_DIRS
 

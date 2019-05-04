@@ -3,6 +3,7 @@ include $(TOP)/configure/CONFIG
 DIRS += caLink
 DIRS += fastcalc
 DIRS += DBRecordTypes
-DIRS += manyChannels
+DIRS += manyDBRecords
+DIRS += manyPVRecords
 include $(EPICS_BASE)/configure/RULES_DIRS
 
