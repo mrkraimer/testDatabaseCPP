@@ -32,6 +32,8 @@ SoftRecordPtr SoftRecord::create(
         value(pvDouble)->
         addAlarm()->
         addTimeStamp()->
+        addControl()->
+        addDisplay()->
         createPVStructure();
     SoftRecordPtr pvRecord(
         new SoftRecord(recordName,pvStructure));
