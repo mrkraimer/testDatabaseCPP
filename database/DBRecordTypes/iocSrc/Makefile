@@ -10,7 +10,7 @@ include $(TOP)/configure/CONFIG
 #
 LIBRARY_IOC += DBRecordTypes
 
-
+USR_CFLAGS += -DUSE_TYPED_RSET
 
 DBRecordTypes_SRCS+= simpleBusyRecord.c
 DBRecordTypes_SRCS+= charoutRecord.c
