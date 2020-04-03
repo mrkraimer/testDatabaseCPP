@@ -43,7 +43,7 @@ using namespace epics::nt;
 using namespace epics::pvAccess;
 using namespace epics::pvaClient;
 using namespace epics::pvDatabase;
-using namespace epics::exampleCPP::exampleLink;
+using namespace epics::testDatabase;
 using std::cout;
 using std::endl;
 using std::string;

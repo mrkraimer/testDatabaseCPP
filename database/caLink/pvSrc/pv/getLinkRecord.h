@@ -20,7 +20,7 @@
 
 #include <shareLib.h>
 
-namespace epics { namespace exampleCPP { namespace exampleLink {
+namespace epics { namespace testDatabase {
 
 
 class GetLinkRecord;
@@ -72,6 +72,6 @@ public:
         epics::pvaClient::PvaClientGetPtr const & clientGet);
 };
 
-}}}
+}}
 
 #endif  /* EXAMPLEGETLINKRECORD_H */

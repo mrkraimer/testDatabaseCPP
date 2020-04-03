@@ -31,40 +31,32 @@
 #include <pv/pvDatabase.h>
 
 #include <epicsExport.h>
-#include <pv/softRecord.h>
+#define epicsExportSharedSymbols
+#include "pv/addremovetrace.h"
 
 using namespace epics::pvData;
 using namespace epics::pvAccess;
 using namespace epics::pvDatabase;
-using namespace epics::testDatabase;
 using namespace std;
+using namespace epics::testDatabase;
 
-static const iocshArg testArg0 = { "recordName", iocshArgString };
-static const iocshArg *testArgs[] = {
-    &testArg0};
+static const iocshFuncDef addremovetraceFuncDef = {"addremovetrace", 0};
 
-static const iocshFuncDef softRecordFuncDef = {
-    "softRecord", 1, testArgs};
-static void softRecordCallFunc(const iocshArgBuf *args)
+static void addremovetraceCallFunc(const iocshArgBuf *args)
 {
-    char *recordName = args[0].sval;
-    if(!recordName) {
-        throw std::runtime_error("softRecord invalid number of arguments");
-    }
-    SoftRecordPtr record = SoftRecord::create(recordName);
-    bool result = PVDatabase::getMaster()->addRecord(record);
-    if(!result) cout << "recordname" << " not added" << endl;
+    addremovetrace::create();
 }
 
-static void softRecordRegister(void)
+static void addremovetraceRegister(void)
 {
     static int firstTime = 1;
     if (firstTime) {
         firstTime = 0;
-        iocshRegister(&softRecordFuncDef, softRecordCallFunc);
+        iocshRegister(&addremovetraceFuncDef, addremovetraceCallFunc);
     }
 }
 
+
 extern "C" {
-    epicsExportRegistrar(softRecordRegister);
+    epicsExportRegistrar(addremovetraceRegister);
 }

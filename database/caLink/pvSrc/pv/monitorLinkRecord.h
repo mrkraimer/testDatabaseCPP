@@ -20,7 +20,7 @@
 
 #include <shareLib.h>
 
-namespace epics { namespace exampleCPP { namespace exampleLink {
+namespace epics { namespace testDatabase {
 
 
 class MonitorLinkRecord;
@@ -76,6 +76,6 @@ public:
     void event(epics::pvaClient::PvaClientMonitorPtr const & monitor);
 };
 
-}}}
+}}
 
 #endif  /* EXAMPLEMONITORLINKRECORD_H */

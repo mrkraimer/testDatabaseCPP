@@ -25,7 +25,8 @@ using std::cout;
 using std::endl;
 using std::string;
 
-namespace epics { namespace exampleCPP { namespace exampleLink {
+namespace epics { namespace testDatabase {
+
 
 class GetLinkRecordRequester :
     public PvaClientChannelStateChangeRequester,
@@ -222,4 +223,4 @@ void GetLinkRecord::channelGetConnect(
     unlock();
 }
 
-}}}
+}}

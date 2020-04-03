@@ -21,7 +21,8 @@
 #include <shareLib.h>
 
 
-namespace epics { namespace exampleCPP {namespace softRecord { 
+namespace epics { namespace testDatabase {
+
 
 class SoftRecord;
 typedef std::tr1::shared_ptr<SoftRecord> SoftRecordPtr;
@@ -50,6 +51,6 @@ private:
 };
 
 
-}}}
+}}
 
 #endif  /* SOFTRECORD_H */

@@ -21,7 +21,7 @@ using namespace epics::nt;
 using std::tr1::static_pointer_cast;
 using std::string;
 
-namespace epics { namespace exampleCPP { namespace softRecord {
+namespace epics { namespace testDatabase {
 
 
 SoftRecordPtr SoftRecord::create(
@@ -54,4 +54,4 @@ void SoftRecord::process()
    PVRecord::process();
 }
 
-}}}
+}}
