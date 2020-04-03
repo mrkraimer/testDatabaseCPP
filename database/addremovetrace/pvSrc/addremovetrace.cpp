@@ -38,12 +38,12 @@ void addremovetrace::create()
     PVDatabasePtr master = PVDatabase::getMaster();
     bool result(false);
     
-    result = master->addRecord(TraceRecord::create("PVRtraceRecord"));
-    if(!result) cout<< "record PVRtraceRecord not added\n";
-    result = master->addRecord(RemoveRecord::create("PVRremoveRecord"));
-    if(!result) cout<< "record PVRremoveRecord not added\n";
-    result = master->addRecord(AddRecord::create("PVRaddRecord"));
-    if(!result) cout<< "record PVRaddRecord not added\n";
+    result = master->addRecord(TraceRecord::create("TDBtraceRecord"));
+    if(!result) cout<< "record TDBtraceRecord not added\n";
+    result = master->addRecord(RemoveRecord::create("TDBremoveRecord"));
+    if(!result) cout<< "record TDBremoveRecord not added\n";
+    result = master->addRecord(AddRecord::create("TDBaddRecord"));
+    if(!result) cout<< "record TDBaddRecord not added\n";
 
 }
 
