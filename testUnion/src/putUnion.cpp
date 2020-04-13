@@ -103,7 +103,8 @@ int main(int argc,char *argv[])
         PvaClientPutDataPtr putData = put->getData();
         PVFieldPtr pvField = putData->getPVStructure()->getSubField("value");
         if(!pvField) {
-            throw std::runtime_error("no value field");
+            pvField = putData->getPVStructure()->getSubField("subfield.value");
+            if(!pvField) throw std::runtime_error("did not find a value field");
         }
         if(pvField->getField()->getType()!=union_) {
             throw std::runtime_error("value is not a PVUnion");

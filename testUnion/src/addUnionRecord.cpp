@@ -12,15 +12,12 @@
 #include <epicsGetopt.h>
 #include <pv/pvaClient.h>
 #include <pv/convert.h>
-#include <pv/ntunion.h>
+#include <pv/standardField.h>
 
 using namespace std;
 using namespace epics::pvData;
 using namespace epics::pvAccess;
 using namespace epics::pvaClient;
-using namespace epics::nt;
-
-
 
 int main(int argc,char *argv[])
 {
@@ -60,9 +57,16 @@ int main(int argc,char *argv[])
         PvaClientPtr pvaClient= PvaClient::get(provider);
         PvaClientChannelPtr pvaClientChannel(pvaClient->createChannel(addRecordName,provider));
         pvaClientChannel->connect();
-        PVStructurePtr pvValue= NTUnion::createBuilder()->
-            addTimeStamp()->
-            createPVStructure();
+        StandardFieldPtr standardField = getStandardField();
+        FieldCreatePtr fieldCreate = getFieldCreate();
+        StructureConstPtr top = fieldCreate->createFieldBuilder()->
+            add("value",fieldCreate->createVariantUnion()) ->
+            add("timeStamp", standardField->timeStamp()) ->
+            addNestedStructure("subfield") ->
+               add("value",fieldCreate->createVariantUnion()) ->
+               endNested()->
+            createStructure();
+        PVStructurePtr pvValue = getPVDataCreate()->createPVStructure(top);
         PvaClientPutGetPtr pvaClientPutGet(pvaClientChannel->createPutGet());
         PvaClientPutDataPtr putData = pvaClientPutGet->getPutData();
         PVStructurePtr pvStructure = putData->getPVStructure();
