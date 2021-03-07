@@ -10,8 +10,8 @@ exampleLink_registerRecordDeviceDriver(pdbbase)
 dbLoadRecords("db/ai.db","name=exampleLinkAI");
 
 cd ${TOP}/iocBoot/${IOC}
+asSetFilename(asdefs)
 iocInit()
-pvDatabaseAccessSecurityCreate(asdefs,null)
 doubleArrayCreateRecord
 exampleMonitorLinkCreateRecord
 exampleGetLinkCreateRecord

@@ -98,7 +98,7 @@ ExamplePutLinkRecordPtr ExamplePutLinkRecord::create(
 ExamplePutLinkRecord::ExamplePutLinkRecord(
     string const & recordName,
     PVStructurePtr const & pvStructure)
-: PVRecord(recordName,pvStructure,1),
+: PVRecord(recordName,pvStructure,0),
   channelConnected(false),
   isPutConnected(false),
   isPutDone(true),

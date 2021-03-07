@@ -94,7 +94,7 @@ ExampleMonitorLinkRecordPtr ExampleMonitorLinkRecord::create(
 ExampleMonitorLinkRecord::ExampleMonitorLinkRecord(
     string const & recordName,
     PVStructurePtr const & pvStructure)
-: PVRecord(recordName,pvStructure),
+: PVRecord(recordName,pvStructure,1),
   channelConnected(false),
   isMonitorConnected(false)
 {

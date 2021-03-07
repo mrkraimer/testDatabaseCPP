@@ -41,7 +41,7 @@ DoubleArrayRecordPtr DoubleArrayRecord::create(
 DoubleArrayRecord::DoubleArrayRecord(
     string const & recordName,
     PVStructurePtr const & pvStructure)
-: PVRecord(recordName,pvStructure)
+: PVRecord(recordName,pvStructure,1)
 {
 }
 

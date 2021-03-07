@@ -20,9 +20,10 @@ fastcalc_DEPEND_DIRS = configure
 DIRS += testUnion
 fastcalc_DEPEND_DIRS = configure
 
-
 DIRS += iocBoot
 iocBoot_DEPEND_DIRS = configure
+
+DIRS += exampleLink
 
 include $(TOP)/configure/RULES_TOP
 
