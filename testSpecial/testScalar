@@ -1,0 +1,50 @@
+#!/bin/sh
+pvput booleanASL0 true
+pvget -r value booleanASL0
+pvput booleanASL1 true
+pvget -r value booleanASL1
+pvput byteASL0 1
+pvget -r value byteASL0
+pvput byteASL1 1
+pvget -r value byteASL1
+pvput shortASL0 1
+pvget -r value shortASL0
+pvput shortASL1 1
+pvget -r value shortASL1
+pvput intASL0 1
+pvget -r value intASL0
+pvput intASL1 1
+pvget -r value intASL1
+pvput longASL0 1
+pvget -r value longASL0
+pvput longASL1 1
+pvget -r value longASL1
+pvput ubyteASL0 1
+pvget -r value ubyteASL0
+pvput ubyteASL1 1
+pvget -r value ubyteASL1
+pvput ushortASL0 1
+pvget -r value ushortASL0
+pvput ushortASL1 1
+pvget -r value ushortASL1
+pvput uintASL0 1
+pvget -r value uintASL0
+pvput uintASL1 1
+pvget -r value uintASL1
+pvput ulongASL0 1
+pvget -r value ulongASL0
+pvput ulongASL1 1
+pvget -r value ulongASL1
+pvput floatASL0 1
+pvget -r value floatASL0
+pvput floatASL1 1
+pvget -r value floatASL1
+pvput doubleASL0 1
+pvget -r value doubleASL0
+pvput doubleASL1 1
+pvget -r value doubleASL1
+pvput stringASL0 1
+pvget -r value stringASL0
+pvput stringASL1 1
+pvget -r value stringASL1
+

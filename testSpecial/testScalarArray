@@ -1,0 +1,50 @@
+#!/bin/sh
+
+pvput booleanArrayASL0 [true,false,true]
+pvget -r value booleanArrayASL0
+pvput booleanArrayASL1 [true,false,true]
+pvget -r value booleanArrayASL1
+pvput byteArrayASL0 [1,2,3,4]
+pvget -r value byteArrayASL0
+pvput byteArrayASL1 [1,2,3,4]
+pvget -r value byteArrayASL1
+pvput shortArrayASL0 [1,2,3,4]
+pvget -r value shortArrayASL0
+pvput shortArrayASL1 [1,2,3,4]
+pvget -r value shortArrayASL1
+pvput intArrayASL0 [1,2,3,4]
+pvget -r value intArrayASL0
+pvput intArrayASL1 [1,2,3,4]
+pvget -r value intArrayASL1
+pvput longArrayASL0 [1,2,3,4]
+pvget -r value longArrayASL0
+pvput longArrayASL1 [1,2,3,4]
+pvget -r value longArrayASL1
+pvput ubyteArrayASL0 [1,2,3,4]
+pvget -r value ubyteArrayASL0
+pvput ubyteArrayASL1 [1,2,3,4]
+pvget -r value ubyteArrayASL1
+pvput ushortArrayASL0 [1,2,3,4]
+pvget -r value ushortArrayASL0
+pvput ushortArrayASL1 [1,2,3,4]
+pvget -r value ushortArrayASL1
+pvput uintArrayASL0 [1,2,3,4]
+pvget -r value uintArrayASL0
+pvput uintArrayASL1 [1,2,3,4]
+pvget -r value uintArrayASL1
+pvput ulongArrayASL0 [1,2,3,4]
+pvget -r value ulongArrayASL0
+pvput ulongArrayASL1 [1,2,3,4]
+pvget -r value ulongArrayASL1
+pvput floatArrayASL0 [1,2,3,4]
+pvget -r value floatArrayASL0
+pvput floatArrayASL1 [1,2,3,4]
+pvget -r value floatArrayASL1
+pvput doubleArrayASL0 [1,2,3,4]
+pvget -r value doubleArrayASL0
+pvput doubleArrayASL1 [1,2,3,4]
+pvget -r value doubleArrayASL1
+pvput stringArrayASL0 [1,2,3,4]
+pvget -r value stringArrayASL0
+pvput stringArrayASL1 [1,2,3,4]
+pvget -r value stringArrayASL1
