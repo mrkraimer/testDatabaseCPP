@@ -23,7 +23,7 @@ fastcalc_DEPEND_DIRS = configure
 DIRS += iocBoot
 iocBoot_DEPEND_DIRS = configure
 
-DIRS += exampleLink
+DIRS += testSpecial
 
 include $(TOP)/configure/RULES_TOP
 
