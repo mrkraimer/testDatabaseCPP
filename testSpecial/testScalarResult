@@ -1,84 +1,48 @@
-Old : 2021-03-14 11:31:09.122  true 
-New : 2021-03-14 11:31:56.198  true 
-booleanASL0 true 
-Old : <undefined>              false 
-Error: Channel put is not allowed
-New : <undefined>              false 
+No value(s) specified. ('pvput -h' for help.)
+booleanASL0 false 
+No value(s) specified. ('pvput -h' for help.)
 booleanASL1 false 
-Old : 2021-03-14 11:31:09.159  1 
-New : 2021-03-14 11:31:56.235  1 
-byteASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+byteASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 byteASL1 0 
-Old : 2021-03-14 11:31:09.199  1 
-New : 2021-03-14 11:31:56.270  1 
-shortASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+shortASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 shortASL1 0 
-Old : 2021-03-14 11:31:09.238  1 
-New : 2021-03-14 11:31:56.306  1 
-intASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+intASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 intASL1 0 
-Old : 2021-03-14 11:31:09.275  1 
-New : 2021-03-14 11:31:56.342  1 
-longASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+longASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 longASL1 0 
-Old : 2021-03-14 11:31:09.312  1 
-New : 2021-03-14 11:31:56.377  1 
-ubyteASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+ubyteASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 ubyteASL1 0 
-Old : 2021-03-14 11:31:09.353  1 
-New : 2021-03-14 11:31:56.416  1 
-ushortASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+ushortASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 ushortASL1 0 
-Old : 2021-03-14 11:31:09.392  1 
-New : 2021-03-14 11:31:56.451  1 
-uintASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+uintASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 uintASL1 0 
-Old : 2021-03-14 11:31:09.430  1 
-New : 2021-03-14 11:31:56.486  1 
-ulongASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+ulongASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 ulongASL1 0 
-Old : 2021-03-14 11:31:09.466  1 
-New : 2021-03-14 11:31:56.522  1 
-floatASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+floatASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 floatASL1 0 
-Old : 2021-03-14 11:31:09.507  1 
-New : 2021-03-14 11:31:56.557  1 
-doubleASL0 1 
-Old : <undefined>              0 
-Error: Channel put is not allowed
-New : <undefined>              0 
+No value(s) specified. ('pvput -h' for help.)
+doubleASL0 0 
+No value(s) specified. ('pvput -h' for help.)
 doubleASL1 0 
-Old : 2021-03-14 11:31:09.544  1 
-New : 2021-03-14 11:31:56.593  1 
-stringASL0 1 
-Old : <undefined>               
-Error: Channel put is not allowed
-New : <undefined>               
+No value(s) specified. ('pvput -h' for help.)
+stringASL0  
+No value(s) specified. ('pvput -h' for help.)
 stringASL1  
