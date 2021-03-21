@@ -4,12 +4,9 @@ include $(TOP)/configure/CONFIG
 
 EPICS_BASE_PVA_CORE_LIBS = pvaClient pvDatabase pvAccess pvAccessCA pvData ca Com
 
-INC += pv/softRecord.h
-
 DBD += softRecordRegister.dbd
 
 LIBRARY = softRecord
-LIBSRCS += softRecord.cpp
 LIBSRCS += softRecordRegister.cpp
 caLink_LIBS += $(EPICS_BASE_PVA_CORE_LIBS)
 

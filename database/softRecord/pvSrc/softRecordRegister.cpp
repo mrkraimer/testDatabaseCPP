@@ -7,36 +7,15 @@
  * @author mrk
  * @date 2013.07.24
  */
-
-
-/* Author: Marty Kraimer */
-
-#include <cstddef>
-#include <cstdlib>
-#include <cstddef>
-#include <string>
-#include <cstdio>
-#include <memory>
-
-#include <cantProceed.h>
-#include <epicsStdio.h>
-#include <epicsMutex.h>
-#include <epicsEvent.h>
-#include <epicsThread.h>
 #include <iocsh.h>
-
-#include <pv/pvIntrospect.h>
-#include <pv/pvData.h>
-#include <pv/pvAccess.h>
+#include <pv/standardField.h>
 #include <pv/pvDatabase.h>
-
+// The following must be the last include for code exampleLink uses
 #include <epicsExport.h>
-#include <pv/softRecord.h>
+#define epicsExportSharedSymbols
 
 using namespace epics::pvData;
-using namespace epics::pvAccess;
 using namespace epics::pvDatabase;
-using namespace epics::testDatabase;
 using namespace std;
 
 static const iocshArg testArg0 = { "recordName", iocshArgString };
@@ -51,9 +30,19 @@ static void softRecordCallFunc(const iocshArgBuf *args)
     if(!recordName) {
         throw std::runtime_error("softRecord invalid number of arguments");
     }
-    SoftRecordPtr record = SoftRecord::create(recordName);
-    bool result = PVDatabase::getMaster()->addRecord(record);
-    if(!result) cout << "recordname" << " not added" << endl;
+    FieldCreatePtr fieldCreate = getFieldCreate();
+    StandardFieldPtr standardField = getStandardField();
+    PVDataCreatePtr pvDataCreate = getPVDataCreate();
+    StructureConstPtr top = fieldCreate->createFieldBuilder()->
+        add("value",pvDouble) ->
+        add("timeStamp",standardField->timeStamp()) ->
+        add("alarm",standardField->alarm()) ->
+        createStructure();
+    PVStructurePtr pvStructure = pvDataCreate->createPVStructure(top);   
+    PVRecordPtr record = PVRecord::create(recordName,pvStructure);
+    PVDatabasePtr master = PVDatabase::getMaster();
+    bool result =  master->addRecord(record);
+    if(!result) cout << "recordname " << recordName << " not added" << endl;
 }
 
 static void softRecordRegister(void)
