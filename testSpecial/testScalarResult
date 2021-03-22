@@ -1,48 +1,84 @@
-No value(s) specified. ('pvput -h' for help.)
-booleanASL0 false 
-No value(s) specified. ('pvput -h' for help.)
+Old : false 
+New : true 
+booleanASL0 true 
+Old : false 
+Error: Channel put is not allowed
+New : false 
 booleanASL1 false 
-No value(s) specified. ('pvput -h' for help.)
-byteASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+byteASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 byteASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-shortASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+shortASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 shortASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-intASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+intASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 intASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-longASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+longASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 longASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-ubyteASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+ubyteASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 ubyteASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-ushortASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+ushortASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 ushortASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-uintASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+uintASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 uintASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-ulongASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+ulongASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 ulongASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-floatASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+floatASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 floatASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-doubleASL0 0 
-No value(s) specified. ('pvput -h' for help.)
+Old : 0 
+New : 1 
+doubleASL0 1 
+Old : 0 
+Error: Channel put is not allowed
+New : 0 
 doubleASL1 0 
-No value(s) specified. ('pvput -h' for help.)
-stringASL0  
-No value(s) specified. ('pvput -h' for help.)
+Old :  
+New : 1 
+stringASL0 1 
+Old :  
+Error: Channel put is not allowed
+New :  
 stringASL1  

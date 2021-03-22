@@ -1,50 +1,50 @@
 #!/bin/sh
 
-pvput -r  booleanArrayASL0 [true,false,true]
+pvput -r value booleanArrayASL0 [true,false,true]
 pvget -r value booleanArrayASL0
-pvput -r  booleanArrayASL1 [true,false,true]
+pvput -r value booleanArrayASL1 [true,false,true]
 pvget -r value booleanArrayASL1
-pvput -r  byteArrayASL0 [1,2,3,4]
+pvput -r value byteArrayASL0 [1,2,3,4]
 pvget -r value byteArrayASL0
-pvput -r  byteArrayASL1 [1,2,3,4]
+pvput -r value byteArrayASL1 [1,2,3,4]
 pvget -r value byteArrayASL1
-pvput -r  shortArrayASL0 [1,2,3,4]
+pvput -r value shortArrayASL0 [1,2,3,4]
 pvget -r value shortArrayASL0
-pvput -r  shortArrayASL1 [1,2,3,4]
+pvput -r value shortArrayASL1 [1,2,3,4]
 pvget -r value shortArrayASL1
-pvput -r  intArrayASL0 [1,2,3,4]
+pvput -r value intArrayASL0 [1,2,3,4]
 pvget -r value intArrayASL0
-pvput -r  intArrayASL1 [1,2,3,4]
+pvput -r value intArrayASL1 [1,2,3,4]
 pvget -r value intArrayASL1
-pvput -r  longArrayASL0 [1,2,3,4]
+pvput -r value longArrayASL0 [1,2,3,4]
 pvget -r value longArrayASL0
-pvput -r  longArrayASL1 [1,2,3,4]
+pvput -r value longArrayASL1 [1,2,3,4]
 pvget -r value longArrayASL1
-pvput -r  ubyteArrayASL0 [1,2,3,4]
+pvput -r value ubyteArrayASL0 [1,2,3,4]
 pvget -r value ubyteArrayASL0
-pvput -r  ubyteArrayASL1 [1,2,3,4]
+pvput -r value ubyteArrayASL1 [1,2,3,4]
 pvget -r value ubyteArrayASL1
-pvput -r  ushortArrayASL0 [1,2,3,4]
+pvput -r value ushortArrayASL0 [1,2,3,4]
 pvget -r value ushortArrayASL0
-pvput -r  ushortArrayASL1 [1,2,3,4]
+pvput -r value ushortArrayASL1 [1,2,3,4]
 pvget -r value ushortArrayASL1
-pvput -r  uintArrayASL0 [1,2,3,4]
+pvput -r value uintArrayASL0 [1,2,3,4]
 pvget -r value uintArrayASL0
-pvput -r  uintArrayASL1 [1,2,3,4]
+pvput -r value uintArrayASL1 [1,2,3,4]
 pvget -r value uintArrayASL1
-pvput -r  ulongArrayASL0 [1,2,3,4]
+pvput -r value ulongArrayASL0 [1,2,3,4]
 pvget -r value ulongArrayASL0
-pvput -r  ulongArrayASL1 [1,2,3,4]
+pvput -r value ulongArrayASL1 [1,2,3,4]
 pvget -r value ulongArrayASL1
-pvput -r  floatArrayASL0 [1,2,3,4]
+pvput -r value floatArrayASL0 [1,2,3,4]
 pvget -r value floatArrayASL0
-pvput -r  floatArrayASL1 [1,2,3,4]
+pvput -r value floatArrayASL1 [1,2,3,4]
 pvget -r value floatArrayASL1
-pvput -r  doubleArrayASL0 [1,2,3,4]
+pvput -r value doubleArrayASL0 [1,2,3,4]
 pvget -r value doubleArrayASL0
-pvput -r  doubleArrayASL1 [1,2,3,4]
+pvput -r value doubleArrayASL1 [1,2,3,4]
 pvget -r value doubleArrayASL1
-pvput -r  stringArrayASL0 [1,2,3,4]
+pvput -r value stringArrayASL0 [1,2,3,4]
 pvget -r value stringArrayASL0
-pvput -r  stringArrayASL1 [1,2,3,4]
+pvput -r value stringArrayASL1 [1,2,3,4]
 pvget -r value stringArrayASL1

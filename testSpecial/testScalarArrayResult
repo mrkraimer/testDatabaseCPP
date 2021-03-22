@@ -1,48 +1,84 @@
-No value(s) specified. ('pvput -h' for help.)
-booleanArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [true,false,true]
+booleanArrayASL0 [true,false,true]
+Old : []
+Error: Channel put is not allowed
+New : []
 booleanArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-byteArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+byteArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 byteArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-shortArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+shortArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 shortArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-intArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+intArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 intArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-longArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+longArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 longArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-ubyteArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+ubyteArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 ubyteArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-ushortArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+ushortArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 ushortArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-uintArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+uintArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 uintArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-ulongArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+ulongArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 ulongArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-floatArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+floatArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 floatArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-doubleArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1,2,3,4]
+doubleArrayASL0 [1,2,3,4]
+Old : []
+Error: Channel put is not allowed
+New : []
 doubleArrayASL1 []
-No value(s) specified. ('pvput -h' for help.)
-stringArrayASL0 []
-No value(s) specified. ('pvput -h' for help.)
+Old : []
+New : [1, 2, 3, 4]
+stringArrayASL0 [1, 2, 3, 4]
+Old : []
+Error: Channel put is not allowed
+New : []
 stringArrayASL1 []

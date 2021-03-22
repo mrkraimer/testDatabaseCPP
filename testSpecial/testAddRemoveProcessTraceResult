@@ -1,0 +1,75 @@
+Old : structure 
+    string linkRecord AddRecordLevel0
+    string protoRecord doubleASL0
+    string newRecord newdouble
+    string accessMethod client
+    time_t timeStamp 2021-03-22 07:32:21.695  
+        long secondsPastEpoch 1616412741
+        int nanoseconds 695445452
+        int userTag 0
+    alarm_t alarm 
+        int severity 0
+        int status 0
+        string message success
+New : structure 
+    string linkRecord AddRecordLevel0
+    string protoRecord doubleASL0
+    string newRecord newdouble
+    string accessMethod client
+    time_t timeStamp 2021-03-22 07:32:50.590  
+        long secondsPastEpoch 1616412770
+        int nanoseconds 589938370
+        int userTag 0
+    alarm_t alarm 
+        int severity 0
+        int status 0
+        string message success
+Old : structure 
+    structure argument
+        string recordName newdouble
+        int level 2
+    structure result
+        string status success
+New : structure 
+    structure argument
+        string recordName newdouble
+        int level 2
+    structure result
+        string status success
+Old : structure 
+    structure argument
+        string command remove
+        string recordName newdouble
+    structure result
+        string status success
+New : structure 
+    structure argument
+        string command add
+        string recordName newdouble
+    structure result
+        string status success
+Old : 0 
+New : 1.25 
+Old : structure 
+    structure argument
+        string command add
+        string recordName newdouble
+    structure result
+        string status success
+New : structure 
+    structure argument
+        string command remove
+        string recordName newdouble
+    structure result
+        string status success
+Old : structure 
+    structure argument
+        string recordName newdouble
+    structure result
+        string status success
+New : structure 
+    structure argument
+        string recordName newdouble
+    structure result
+        string status success
+Old : Error: Timeout
