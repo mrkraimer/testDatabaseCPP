@@ -1,24 +1,24 @@
 Old : structure 
-    string linkRecord AddRecordLevel0
-    string protoRecord doubleASL0
-    string newRecord newdouble
+    string linkRecord 
+    string protoRecord 
+    string newRecord 
     string accessMethod client
-    time_t timeStamp 2021-03-22 07:32:21.695  
-        long secondsPastEpoch 1616412741
-        int nanoseconds 695445452
+    time_t timeStamp <undefined>              
+        long secondsPastEpoch 0
+        int nanoseconds 0
         int userTag 0
     alarm_t alarm 
         int severity 0
         int status 0
-        string message success
+        string message 
 New : structure 
     string linkRecord AddRecordLevel0
     string protoRecord doubleASL0
     string newRecord newdouble
     string accessMethod client
-    time_t timeStamp 2021-03-22 07:32:50.590  
-        long secondsPastEpoch 1616412770
-        int nanoseconds 589938370
+    time_t timeStamp 2021-03-24 09:38:47.222  
+        long secondsPastEpoch 1616593127
+        int nanoseconds 221533904
         int userTag 0
     alarm_t alarm 
         int severity 0
@@ -26,10 +26,10 @@ New : structure
         string message success
 Old : structure 
     structure argument
-        string recordName newdouble
-        int level 2
+        string recordName 
+        int level 0
     structure result
-        string status success
+        string status 
 New : structure 
     structure argument
         string recordName newdouble
@@ -38,10 +38,10 @@ New : structure
         string status success
 Old : structure 
     structure argument
-        string command remove
-        string recordName newdouble
+        string command 
+        string recordName 
     structure result
-        string status success
+        string status 
 New : structure 
     structure argument
         string command add
@@ -64,9 +64,9 @@ New : structure
         string status success
 Old : structure 
     structure argument
-        string recordName newdouble
+        string recordName 
     structure result
-        string status success
+        string status 
 New : structure 
     structure argument
         string recordName newdouble

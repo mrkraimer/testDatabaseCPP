@@ -2,3 +2,8 @@ ASG(DEFAULT) {
     RULE(0,WRITE)
     RULE(1,READ)
 }
+ASG(DATABASE) {
+    RULE(0,NONE)
+    RULE(1,NONE)
+}
+

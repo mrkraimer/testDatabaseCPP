@@ -2,83 +2,83 @@ Old : []
 New : [true,false,true]
 booleanArrayASL0 [true,false,true]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 booleanArrayASL1 []
 Old : []
 New : [1,2,3,4]
 byteArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 byteArrayASL1 []
 Old : []
 New : [1,2,3,4]
 shortArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 shortArrayASL1 []
 Old : []
 New : [1,2,3,4]
 intArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 intArrayASL1 []
 Old : []
 New : [1,2,3,4]
 longArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 longArrayASL1 []
 Old : []
 New : [1,2,3,4]
 ubyteArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 ubyteArrayASL1 []
 Old : []
 New : [1,2,3,4]
 ushortArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 ushortArrayASL1 []
 Old : []
 New : [1,2,3,4]
 uintArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 uintArrayASL1 []
 Old : []
 New : [1,2,3,4]
 ulongArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 ulongArrayASL1 []
 Old : []
 New : [1,2,3,4]
 floatArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 floatArrayASL1 []
 Old : []
 New : [1,2,3,4]
 doubleArrayASL0 [1,2,3,4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 doubleArrayASL1 []
 Old : []
 New : [1, 2, 3, 4]
 stringArrayASL0 [1, 2, 3, 4]
 Old : []
-Error: Channel put is not allowed
+Error: ChannelPut::put is not allowed
 New : []
 stringArrayASL1 []
