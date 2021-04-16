@@ -6,7 +6,6 @@ include $(TOP)/configure/CONFIG
 DIRS += DBRecordTypes
 DIRS += caLink
 DIRS += softRecord
-DIRS += addremovetrace
 
 include $(TOP)/configure/RULES_DIRS
 

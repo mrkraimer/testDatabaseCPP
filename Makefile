@@ -24,6 +24,7 @@ DIRS += iocBoot
 iocBoot_DEPEND_DIRS = configure
 
 DIRS += testSpecial
+testSpecial_DEPEND_DIRS = configure
 
 include $(TOP)/configure/RULES_TOP
 

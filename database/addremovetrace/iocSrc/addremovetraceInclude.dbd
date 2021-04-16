@@ -1,5 +1,0 @@
-include "base.dbd"
-include "addremovetraceRegister.dbd"
-include "PVAServerRegister.dbd"
-include "registerChannelProviderLocal.dbd"
-include "qsrv.dbd"
