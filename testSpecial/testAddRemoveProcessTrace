@@ -1,8 +1,0 @@
-#!/bin/sh
-pvput pvdbcrTestAdd '{"linkRecord":"AddRecordLevel0","protoRecord":"doubleASL0","newRecord":"newdouble","accessMethod":"client"}'
-pvput TraceRecordLevel0 argument='{"recordName":"newdouble","level":"2"}'
-pvput ProcessRecordLevel0 argument='{"recordName":"newdouble","command":"add"}'
-pvput -r value newdouble 1.25
-pvput ProcessRecordLevel0 argument='{"recordName":"newdouble","command":"remove"}'
-pvput RemoveRecordLevel0 argument.recordName="newdouble"
-pvput -r value newdouble 1.5
